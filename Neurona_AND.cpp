@@ -6,8 +6,8 @@ int eva_red(int x1, int x2, double w0, double w1, double w2);
 
 int main(int argc, char** argv){
 
-	double w0 = 15, w1 = 0.5, w2 = 50;
-	int i, pasos = 50, error;
+	double w0 = 2, w1 = 1, w2 = 2;
+	int i, pasos = 10, error;
 	
 	cout << w0 << " " << w1 << " " << w2 << endl;
 	for(i = 0; i < pasos; i++){
@@ -44,7 +44,7 @@ int eva_red(int x1, int x2, double w0, double w1, double w2){
 		red = 1;
 	}
 	
-	if(x1 == 1 || x2 == 1){
+	if(x1 == 1 && x2 == 1){
 		res = 1 - red;
 	}else{
 		res = 0 - red;
